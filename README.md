@@ -1,1 +1,4 @@
-
+●	Built a model to classify an image of my favorite 5 Indian celebrities. Nearly 100 images for each celebrity were collected for training of the model as part of Data Collection process. Images with proper clear faces and eyes were only used for training. Hence OpenCV package and a technique called haarcascades to detect if a face and two eyes are clearly visible or not.\
+●	Then on the cropped images, wavelet transforms were applied to extract meaning features that can help with image identification. Using wavelet transform and a raw pixel image as X(features) and used class labels as y. These X and y will be used for model training.\
+●	A simple SVM model is created to get a feel of how it is going to perform on image classification. Then using GridSearchCV, I try different models with different hyper parameters to come up with a best model that can give maximum accuracy.\
+●	Wrote a python flask server that uses the saved model to serve http requests and built a website in html, css and javascript that have an area where someone can drag and drop an image of a person and it will identify that person.
